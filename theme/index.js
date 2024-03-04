@@ -1,4 +1,4 @@
-import colors from "./colors";
+import colors, {PikachuPalette} from "./colors";
 import typography,{fontWeights} from "./typography";
 
 const theme = {
@@ -14,6 +14,7 @@ const theme = {
 
     light: colors.white,
     dark: colors.mineShaft,
+    ...PikachuPalette,
     ...colors
   },
   typography,

@@ -13,7 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        background: ${p=>`linear-gradient(110deg, ${p.theme.colors.softPeach}, ${p.theme.colors.aquaHaze} 55%)`};
+        background: ${p=>`linear-gradient(110deg, ${p.theme.colors.light}, ${p.theme.colors.primaryLight} 80%)`};
         transition: all 0.50s linear;
     }
 

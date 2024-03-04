@@ -2,6 +2,7 @@ import styled, {ThemeProvider} from "styled-components";
 import theme from "@/theme";
 import {media} from "@/theme/media";
 import {GlobalStyles} from "@/styles";
+import Navbar from "@/components/Navbar";
 
 const RootContainer = styled.div`
     max-width: 1440px;
@@ -14,6 +15,7 @@ const RootContainer = styled.div`
 function App({Component, pageProps}) {
   return <ThemeProvider theme={theme}>
     <GlobalStyles/>
+    <Navbar/>
     <RootContainer>
       <Component {...pageProps} />
     </RootContainer>

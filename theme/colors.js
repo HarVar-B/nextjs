@@ -32,13 +32,13 @@ const colors = {
 };
 
 export const PikachuPalette = {
-  primary: colors.ripeLemon,
-  secondary: colors.alizarinCrimson,
+  secondary: colors.ripeLemon,
+  primary: colors.alizarinCrimson,
   tertiary: colors.jambalaya,
-  secondaryComp: colors.brightSun,
-  primaryComp: colors.black,
+  primaryComp: colors.brightSun,
+  secondaryComp: colors.black,
 
-  primaryLight: colors.ripeLemon+"1A",
+  primaryLight: colors.alizarinCrimson+"1A",
   tertiaryLight: colors.jambalaya+"1A",
 
   light: colors.white,
