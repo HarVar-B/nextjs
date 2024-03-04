@@ -2,6 +2,7 @@ import Link from 'next/link';
 // import {useTranslation} from "next-i18next";
 import styled, {css} from 'styled-components';
 import React, {useEffect, useState} from 'react';
+import {useWindowScroll} from "@uidotdev/usehooks";
 import routes from "@/routes";
 import {media} from "@/theme/media";
 import useDropdown from "@/hooks/dropdown";
@@ -182,9 +183,9 @@ const Navbar = () => {
   // const {t} = useTranslation('common');
   // const {creativesTypes} = UseCreativeTypes();
   const [dropdownContainerRef, isDropDownVisible, openDropdown, closeDropdown] = useDropdown();
-
+  const [{y},] = useWindowScroll();
   return (
-    <NavbarContainer isScrolled={window.scrollY > 0}>
+    <NavbarContainer isScrolled={y > 0}>
       <NavSection>
         <LeftNavSection>
           <Link href={routes.root}>

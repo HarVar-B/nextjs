@@ -40,20 +40,17 @@ const FooterColumn = styled.div`
     padding: 20px;
 
     ${media.md`
-    padding: 0px 10px;
-  `}
-`;
-const FooterColumnMiddle = styled.div`
-    flex: 2;
-    padding: 20px;
-
-    ${media.md`
-    padding: 0px 10px;
+    padding: 0 10px;
   `}
 `;
 const Logo = styled.img`
     max-width: 100%;
     height: 60px;
+`;
+const FooterTitle = styled.h3`
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 600;
 `;
 const SocialLinks = styled.div`
     margin-top: 140px;
@@ -77,12 +74,20 @@ const SocialLink = styled(Link)`
     transition: all 0.3s linear;
 
     &:hover {
-        box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.25);
     }
 `;
 const SocialLinkIcon = styled.img`
     width: 25px;
     height: 25px;
+`;
+const FooterColumnMiddle = styled.div`
+    flex: 2;
+    padding: 20px;
+
+    ${media.md`
+    padding: 0 10px;
+  `}
 `;
 const FooterLinksContainer = styled.div`
     display: flex;
@@ -91,7 +96,7 @@ const FooterLinksContainer = styled.div`
 
     ${media.md`
     flex-direction: column;
-    gap: 0px;
+    gap: 0;
   `}
 `;
 const FooterLinkContainer = styled.ul`
@@ -124,13 +129,8 @@ const FooterTitleContainer = styled.div`
         margin-bottom: 10px;
     `}
 `;
-const FooterTitle = styled.h3`
-    margin-bottom: 10px;
-    font-size: 22px;
-    font-weight: 600;
-`;
 const AddressContainer = styled.div`
-    margin: 10px 0px;
+    margin: 10px 0;
     display: flex;
     gap: 10px;
 `;
@@ -203,7 +203,6 @@ const Footer = () => {
           </SocialLinks>
         </FooterColumn>
         <FooterColumnMiddle>
-
           <FooterLinksContainer>
             <FooterLinkContainer>
               <FooterTitle>For Masters</FooterTitle>
@@ -211,12 +210,10 @@ const Footer = () => {
               <FooterLink href={routes.contests}>Browse Contests</FooterLink>
             </FooterLinkContainer>
           </FooterLinksContainer>
-
           <FooterTitleContainer>
             <FooterTitle>Others</FooterTitle>
             <HorizontalLine/>
           </FooterTitleContainer>
-
           <FooterLinksContainer>
             <FooterLinkContainer>
               <FooterLink
@@ -260,7 +257,7 @@ const Footer = () => {
           <SubscriptionForm>
             <input type="email" placeholder="Enter email to subscribe"/>
             <button type="submit">
-              <i className="fa-solid fa-arrow-right"/>
+              →
             </button>
           </SubscriptionForm>
         </FooterColumn>

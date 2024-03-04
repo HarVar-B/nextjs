@@ -11,7 +11,7 @@ const RootContainer = styled.div`
     padding: 0 30px;
 
     ${media.md`padding:0;`}
-`
+`;
 
 function App({Component, pageProps}) {
   return <ThemeProvider theme={theme}>
@@ -20,7 +20,7 @@ function App({Component, pageProps}) {
     <RootContainer>
       <Component {...pageProps} />
     </RootContainer>
-    <Footer></Footer>
+    <Footer/>
   </ThemeProvider>;
 }
 
