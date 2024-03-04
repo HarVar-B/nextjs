@@ -3,6 +3,7 @@ import theme from "@/theme";
 import {media} from "@/theme/media";
 import {GlobalStyles} from "@/styles";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const RootContainer = styled.div`
     max-width: 1440px;
@@ -19,6 +20,7 @@ function App({Component, pageProps}) {
     <RootContainer>
       <Component {...pageProps} />
     </RootContainer>
+    <Footer></Footer>
   </ThemeProvider>;
 }
 
