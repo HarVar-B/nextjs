@@ -4,7 +4,7 @@ import routes from '@/routes';
 import {media} from '@/theme/media';
 import {UseFeaturedContests} from "@/hooks/contests";
 import ContestCard from "@/components/contest/ContestCard";
-import {SectionContainer, SectionHeading, ViewAll} from "@/components/Homepage/styles";
+import {SectionContainer, SectionHeading, ViewAll} from "@/sections/Homepage/styles";
 
 const OpportunityCards = styled.div`
     display: grid;
