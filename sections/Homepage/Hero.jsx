@@ -90,7 +90,7 @@ const HeroCTA = styled(Link)`
 // TODO: Achieve mock-ups for both mobile and desktop with only changing styles and no more or less HTML nodes than provided below
 const Hero = () => {
   return (
-    <HeroContainer>
+    <HeroContainer id={'hero'}>
       <HeroContent>
         <HeroTitle>Catch 'em All</HeroTitle>
         <HeroBullets>

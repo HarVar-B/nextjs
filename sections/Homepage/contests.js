@@ -25,7 +25,7 @@ const Contests = () => {
   const {featuredContests} = UseFeaturedContests();
   console.log(featuredContests)
   return (
-    <SectionContainer>
+    <SectionContainer id={'contests'}>
       <SectionHeading>
         Contests
       </SectionHeading>

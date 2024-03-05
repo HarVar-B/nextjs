@@ -8,7 +8,7 @@ export const usePokemonTypes = () =>{
     console.log(data)
   }, [data]);
   return {
-    pokemonTypes: data.map((_)=>({..._, img:`/pokemon/types/${_.id}.png`})) || [],
+    pokemonTypes: (data || []).map((_)=>({..._, img:`/pokemon/types/${_.id}.png`})),
     isLoading,
     isError
   }

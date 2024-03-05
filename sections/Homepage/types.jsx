@@ -58,7 +58,7 @@ const Title = styled.h3`
 
 const PopularTypes = () => {
   const {pokemonTypes, isLoading, isError}=usePokemonTypes()
-  return <SectionContainer>
+  return <SectionContainer id={"popular-types"}>
     <SectionHeading>Popular Types</SectionHeading>
     <Services>
       {pokemonTypes.map(({id, label, img}, index) =>
