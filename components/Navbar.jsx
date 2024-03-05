@@ -1,13 +1,14 @@
 import Link from 'next/link';
 // import {useTranslation} from "next-i18next";
 import styled, {css} from 'styled-components';
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {useWindowScroll} from "@uidotdev/usehooks";
 import routes from "@/routes";
 import {media} from "@/theme/media";
 import useDropdown from "@/hooks/dropdown";
 // import MegaMenu from '@/components/MegaMenu';
 // import {UseCreativeTypes} from '@/hooks/profiles';
+
 const Sticky = css`
     position: sticky;
     top: 0;
@@ -179,6 +180,7 @@ const LoginLink = styled(Link)`
       padding: 6px 6px;
     `}
 `;
+
 const Navbar = () => {
   // const {t} = useTranslation('common');
   // const {creativesTypes} = UseCreativeTypes();
