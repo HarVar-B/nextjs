@@ -4,7 +4,7 @@ import routes from '@/routes';
 import {media} from '@/theme/media';
 import {UseFeaturedContests} from "@/hooks/contests";
 import ContestCard from "@/components/contest/ContestCard";
-import {SectionContainer, SectionHeading, ViewAll} from "@/sections/Homepage/styles";
+import {SectionContainer, SectionHeading, ViewAll} from "./styles";
 
 const OpportunityCards = styled.div`
     display: grid;
@@ -23,7 +23,6 @@ const OpportunityCards = styled.div`
 
 const Contests = () => {
   const {featuredContests} = UseFeaturedContests();
-  console.log(featuredContests)
   return (
     <SectionContainer id={'contests'}>
       <SectionHeading>

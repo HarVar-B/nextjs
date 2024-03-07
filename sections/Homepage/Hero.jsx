@@ -82,7 +82,7 @@ const HeroCTA = styled(Link)`
     transition: all 0.3s linear;
 
     &:hover {
-        box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.25);
         cursor: pointer;
     }
 `;

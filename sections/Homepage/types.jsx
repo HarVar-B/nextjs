@@ -3,7 +3,7 @@ import styled from "styled-components";
 import routes from '@/routes';
 import {media} from '@/theme/media';
 import Card from "@/components/common/Card";
-import {SectionContainer, SectionHeading, ViewAll} from "@/sections/Homepage/styles";
+import {SectionContainer, SectionHeading, ViewAll} from "./styles";
 import {usePokemonTypes} from "@/hooks/pokemon";
 
 const Services = styled.div`
